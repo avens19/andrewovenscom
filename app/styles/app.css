@@ -3,7 +3,7 @@
 html, body {
 	margin: 0;
 	padding: 0;
-	background: url(/assets/images/paper.jpg) center top no-repeat fixed;
+	background: url(images/paper.jpg) center top no-repeat fixed;
   font-family: Century Gothic, Helvetica, sans-serif;
 	font-size: 14pt;
 	color: #fff;
@@ -20,7 +20,7 @@ html, body {
   padding-top: 50px;
   padding-bottom: 20px;
   text-align: center;
-  background: url(/assets/images/bar.gif) repeat-x;
+  background: url(images/bar.gif) repeat-x;
   background-size: 100%;
 }
 .content {
@@ -53,32 +53,32 @@ html, body {
   height: 54px;
 }
 .navbutton.skills {
-  background: url(/assets/images/buttons/skills.png);
+  background: url(images/buttons/skills.png);
   width: 74px;
 }
 .navbutton.skills:hover {
-  background: url(/assets/images/buttons/skillsr.png);
+  background: url(images/buttons/skillsr.png);
 }
 .navbutton.work {
-  background: url(/assets/images/buttons/work.png);
+  background: url(images/buttons/work.png);
   width: 74px;
 }
 .navbutton.work:hover {
-  background: url(/assets/images/buttons/workr.png);
+  background: url(images/buttons/workr.png);
 }
 .navbutton.about {
-  background: url(/assets/images/buttons/about.png);
+  background: url(images/buttons/about.png);
   width: 124px;
 }
 .navbutton.about:hover {
-  background: url(/assets/images/buttons/aboutr.png);
+  background: url(images/buttons/aboutr.png);
 }
 .navbutton.contact {
-  background: url(/assets/images/buttons/contact.png);
+  background: url(images/buttons/contact.png);
   width: 98px;
 }
 .navbutton.contact:hover {
-  background: url(/assets/images/buttons/contactr.png);
+  background: url(images/buttons/contactr.png);
 }
 
 .image-link {
@@ -136,7 +136,7 @@ a:hover {color: #C2A385}
   text-align: center;
 	color: #7a7c3b;
 	font-size: 9pt;
-  background: url(/assets/images/bar.gif) repeat-x;
+  background: url(images/bar.gif) repeat-x;
   background-size: 100%;
 }
 .clear {
