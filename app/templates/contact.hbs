@@ -1,0 +1,10 @@
+<h2>Contact Me</h2>
+<div class='indent'>
+  {{#each model as |contact|}}
+    <div class='contact-icon'>
+      <a class='image-link' href='{{contact.link}}' target='_blank'>
+        {{fa-icon icon=contact.icon title=contact.title}}
+      </a>
+    </div>
+  {{/each}}
+</div>

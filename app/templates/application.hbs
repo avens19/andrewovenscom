@@ -1,0 +1,24 @@
+<div class='container'>
+  <div class='header'>
+    {{#link-to 'index' class='image-link'}}
+      <div class='masthead'><img src='/assets/images/masthead.png' alt='Andrew Ovens' /></div>
+    {{/link-to}}
+    <div class='navbar'>
+      {{nav-button link='skills'}}
+      {{nav-button link='work'}}
+      {{nav-button link='about'}}
+      {{nav-button link='contact'}}
+    </div>
+  </div>
+
+  <div class='content'>
+    <div class='inner-content'>
+      {{outlet}}
+    </div>
+  </div>
+
+  <div class='footer'>
+    <span>Copyright 2011 &copy; Andrew Ovens. All Rights Reserved. Artwork by <a target='_blank' href='http://stephgilchrist.com'>Steph Gilchrist</a>.</span>
+  </div>
+
+</div>
