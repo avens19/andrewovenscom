@@ -7,10 +7,10 @@ install:
 before_deploy:
    - rm -rf dist
    - npm run build
-   - chmod +x scripts/deploy.sh
+   - chmod +x ./deploy.sh
 deploy:
   skip_cleanup: true
   provider: script
-  script: scripts/deploy.sh
+  script: ./deploy.sh
   on:
     branch: master
