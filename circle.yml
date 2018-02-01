@@ -9,7 +9,7 @@ dependencies:
 
 deployment:
   branch:
-    branch: ^master$
+    branch: /^master$/
     commands:
       - rm -rf dist
       - npm run build
