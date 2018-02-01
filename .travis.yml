@@ -1,15 +1,14 @@
 language: node_js
 node_js:
-- lts/*
+  - lts/*
 install:
    - npm install
-   - ./node_modules/.bin/bower install
+   - ./node_modules/.bin/bower install 
 before_deploy:
-   - rm -rf dist
-   - npm run build
-   - chmod +x ./deploy.sh
+  - mkdir .ssh
+  - openssl aes-256-cbc -K $encrypted_7c488edc362f_key -iv $encrypted_7c488edc362f_iv
+  -in www-data.enc -out .ssh/deploy -d
 deploy:
-  skip_cleanup: true
   provider: script
   script: ./deploy.sh
   on:
