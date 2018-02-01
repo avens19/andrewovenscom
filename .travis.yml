@@ -7,6 +7,7 @@ install:
 before_deploy:
    - rm -rf dist
    - npm run build
+   - chmod +x scripts/deploy.sh
 deploy:
   skip_cleanup: true
   provider: script
