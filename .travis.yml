@@ -3,8 +3,12 @@ node_js:
 - lts/*
 install:
    - npm install
-   - ./node_modules/.bin/bower install 
+   - ./node_modules/.bin/bower install
+before_deploy:
+   - rm -rf dist
+   - npm run build
 deploy:
+  skip_cleanup: true
   provider: script
   script: scripts/deploy.sh
   on:
