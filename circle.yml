@@ -13,4 +13,4 @@ deployment:
     commands:
       - rm -rf dist
       - npm run build
-      - scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -r dist/* deploy@andrewovens.com:/var/www/html/
+      - scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -r dist/* deploy@andrewovens.com:/var/www/andrewovenscom/
