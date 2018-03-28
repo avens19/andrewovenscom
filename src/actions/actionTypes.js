@@ -1,0 +1,2 @@
+export const LOAD_SKILLS = 'LOAD_SKILLS';
+export const LOAD_SKILLS_SUCCESS = 'LOAD_SKILLS_SUCCESS';
