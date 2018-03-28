@@ -1,14 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Masthead from './Masthead';
 
-class HomePage extends Component {
-  render() {
-    return (
-      <div>
-        <Masthead />
-      </div>
-    );
-  }
+export default function HomePage() {
+  return (
+    <div>
+      <Masthead />
+    </div>
+  );
 }
-
-export default HomePage;

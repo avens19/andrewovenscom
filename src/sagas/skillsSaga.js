@@ -6,7 +6,7 @@ import { SKILLS } from '../api/dataTypes';
 
 function* getAllSkills() {
   const state = yield select();
-  let skills;
+  let skills = [];
   if (state.skills.length) {
     skills = state.skills;
   } else {

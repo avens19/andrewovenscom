@@ -30,7 +30,7 @@ export default function NavBar({ loading }) {
       </div>
     </nav>
   );
-};
+}
 
 NavBar.propTypes = {
   loading: PropTypes.bool.isRequired

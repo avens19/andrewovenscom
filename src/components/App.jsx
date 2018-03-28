@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import {compose} from 'redux';
-import {connect} from 'react-redux';
-import { withRouter } from 'react-router'
+import { compose } from 'redux';
+import { connect } from 'react-redux';
+import { withRouter } from 'react-router';
 import NavBar from './common/NavBar';
 
 class App extends Component {

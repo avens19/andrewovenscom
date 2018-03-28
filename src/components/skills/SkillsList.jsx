@@ -11,7 +11,7 @@ export default function SkillsList({ skills }) {
       )}
     </ul>
   );
-};
+}
 
 SkillsList.propTypes = {
   skills: PropTypes.array.isRequired

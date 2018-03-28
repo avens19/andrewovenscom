@@ -6,7 +6,7 @@ import { ABOUTS } from '../api/dataTypes';
 
 function* getAllAbouts() {
   const state = yield select();
-  let abouts;
+  let abouts = [];
   if (state.abouts.length) {
     abouts = state.abouts;
   } else {

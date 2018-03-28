@@ -9,7 +9,7 @@ export default function ContactItem({ contact }) {
       </a>
     </li>
   );
-};
+}
 
 ContactItem.propTypes = {
   contact: PropTypes.object.isRequired

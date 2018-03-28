@@ -10,7 +10,7 @@ export default function ContactList({ contacts }) {
       )}
     </ul>
   );
-};
+}
 
 ContactList.propTypes = {
   contacts: PropTypes.array.isRequired

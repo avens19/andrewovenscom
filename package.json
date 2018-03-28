@@ -19,6 +19,7 @@
     "dotenv-expand": "4.2.0",
     "eslint": "4.10.0",
     "eslint-config-react-app": "^2.1.0",
+    "eslint-config-strict": "^14.0.1",
     "eslint-loader": "1.9.0",
     "eslint-plugin-flowtype": "2.39.1",
     "eslint-plugin-import": "2.8.0",
@@ -46,6 +47,7 @@
     "react-router-dom": "^4.2.2",
     "redux": "^3.7.2",
     "redux-saga": "^0.16.0",
+    "resolve-url-loader": "^2.3.0",
     "sass-loader": "6.0.7",
     "style-loader": "0.19.0",
     "sw-precache-webpack-plugin": "0.11.4",
@@ -98,11 +100,5 @@
     "presets": [
       "react-app"
     ]
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "devDependencies": {
-    "resolve-url-loader": "^2.3.0"
   }
 }

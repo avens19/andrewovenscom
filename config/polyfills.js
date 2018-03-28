@@ -1,5 +1,3 @@
-'use strict';
-
 if (typeof Promise === 'undefined') {
   // Rejection tracking prevents a common issue where React gets into an
   // inconsistent state due to an error, but it gets swallowed by a Promise,
@@ -17,6 +15,6 @@ Object.assign = require('object-assign');
 
 // In tests, polyfill requestAnimationFrame since jsdom doesn't provide it yet.
 // We don't polyfill it in the browser--this is user's responsibility.
-if (process.env.NODE_ENV === 'test') {
+if (process.env.NODE_ENV === 'test') { //eslint-disable-line no-process-env
   require('raf').polyfill(global);
 }

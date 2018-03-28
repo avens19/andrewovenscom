@@ -6,7 +6,7 @@ import { CONTACTS } from '../api/dataTypes';
 
 function* getAllContacts() {
   const state = yield select();
-  let contacts;
+  let contacts = [];
   if (state.contacts.length) {
     contacts = state.contacts;
   } else {

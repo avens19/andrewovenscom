@@ -5,23 +5,25 @@ const url = require('url');
 // Make sure any symlinks in the project folder are resolved:
 // https://github.com/facebookincubator/create-react-app/issues/637
 const appDirectory = fs.realpathSync(process.cwd());
-const resolveApp = relativePath => path.resolve(appDirectory, relativePath);
-
-const envPublicUrl = process.env.PUBLIC_URL;
-
-function ensureSlash(path, needsSlash) {
-  const hasSlash = path.endsWith('/');
-  if (hasSlash && !needsSlash) {
-    return path.substr(path, path.length - 1);
-  } else if (!hasSlash && needsSlash) {
-    return `${path}/`;
-  } else {
-    return path;
-  }
+function resolveApp(relativePath) {
+  return path.resolve(appDirectory, relativePath);
 }
 
-const getPublicUrl = appPackageJson =>
-  envPublicUrl || require(appPackageJson).homepage;
+const envPublicUrl = process.env.PUBLIC_URL; //eslint-disable-line no-process-env
+
+function ensureSlash(p, needsSlash) {
+  const hasSlash = p.endsWith('/');
+  if (hasSlash && !needsSlash) {
+    return p.substr(path, path.length - 1);
+  } else if (!hasSlash && needsSlash) {
+    return `${p}/`;
+  }
+  return p;
+}
+
+function getPublicUrl(appPackageJson) {
+  return envPublicUrl || require(appPackageJson).homepage;
+}
 
 // We use `PUBLIC_URL` environment variable or "homepage" field to infer
 // "public path" at which the app is served.
@@ -49,5 +51,5 @@ module.exports = {
   testsSetup: resolveApp('src/setupTests.js'),
   appNodeModules: resolveApp('node_modules'),
   publicUrl: getPublicUrl(resolveApp('package.json')),
-  servedPath: getServedPath(resolveApp('package.json')),
+  servedPath: getServedPath(resolveApp('package.json'))
 };

@@ -11,7 +11,7 @@ export default function AboutList({ abouts }) {
       )}
     </ul>
   );
-};
+}
 
 AboutList.propTypes = {
   abouts: PropTypes.array.isRequired
