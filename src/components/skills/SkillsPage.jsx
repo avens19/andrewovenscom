@@ -7,7 +7,7 @@ import SkillsList from './SkillsList';
 
 class SkillsPage extends Component {
   componentWillMount() {
-    this.props.actions.loadSkills();
+    this.props.actions.loadSkillsAsync();
   }
 
   render() {

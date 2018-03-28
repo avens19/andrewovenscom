@@ -2,11 +2,13 @@ import React from 'react';
 import {render} from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import routes from './routes';
-import {createStore, applyMiddleware} from 'redux';
+import {createStore, applyMiddleware, compose} from 'redux';
 import rootReducer from './reducers';
 import initialState from './reducers/initialState';
 import createSagaMiddleware from 'redux-saga';
 import skillsSaga from './sagas/skillsSaga';
+import aboutSaga from './sagas/aboutSaga';
+import contactSaga from './sagas/contactSaga';
 import {Provider} from 'react-redux';
 import '../node_modules/jquery/dist/jquery.slim.min';
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle.min';
@@ -16,13 +18,17 @@ import './scss/App.scss';
 
 const sagaMiddleware = createSagaMiddleware();
 
+const composer = typeof(window) === 'object' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ : compose;
+
 const store = createStore(
   rootReducer,
   initialState,
-  applyMiddleware(sagaMiddleware)
+  composer(applyMiddleware(sagaMiddleware))
 );
 
 sagaMiddleware.run(skillsSaga);
+sagaMiddleware.run(aboutSaga);
+sagaMiddleware.run(contactSaga);
 
 render(
   <Provider store={store}>

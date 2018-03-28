@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function SkillsPage(props) {
+export default function SkillsList({ skills }) {
   return (
     <ul>
-      {props.skills.map((skill) =>
+      {skills.map((skill) =>
         <li key={skill.id}>
           {skill.value}
         </li>
@@ -13,6 +13,6 @@ export default function SkillsPage(props) {
   );
 };
 
-SkillsPage.propTypes = {
+SkillsList.propTypes = {
   skills: PropTypes.array.isRequired
 };

@@ -1,0 +1,20 @@
+[
+  {
+    "id": 0,
+    "title": "View my LinkedIn profile",
+    "link": "http://ca.linkedin.com/in/ovens",
+    "icon": "linkedin-square"
+  },
+  {
+    "id": 1,
+    "title": "Send me an email",
+    "link": "mailto:mail@andrewovens.com",
+    "icon": "envelope-square"
+  },
+  {
+    "id": 2,
+    "title": "View my resume",
+    "link": "https://docs.google.com/document/d/1U-AsRToFXg57S3_d912_qkJPK-bbKi8TNwi1IQCG_Jw/edit?hl=en",
+    "icon": "external-link-square"
+  }
+]

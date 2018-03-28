@@ -1,3 +1,6 @@
 export default {
-  skills: []
+  asyncCallsInProgress: 0,
+  skills: [],
+  abouts: [],
+  contacts: []
 };
