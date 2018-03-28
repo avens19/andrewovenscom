@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router';
 import NavBar from './common/NavBar';
 
-class App extends Component {
+export class App extends Component {
   render() {
     return (
       <div className="container-fluid">
