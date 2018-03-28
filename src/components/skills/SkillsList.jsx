@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 export default function SkillsPage(props) {
   return (
     <ul>
-      {props.skills.map((skills) =>
-        <li>
-          {skills.value}
+      {props.skills.map((skill) =>
+        <li key={skill.id}>
+          {skill.value}
         </li>
       )}
     </ul>
