@@ -9,5 +9,6 @@ it('renders a container with the navbar and children inside', () => {
   const wrapper = shallow(<App children={[ <div key="moo" className="moo"></div> ]} loading={false} />);
   expect(wrapper.find('div.container-fluid')).toExist();
   expect(wrapper.find('div.container-fluid > NavBar')).toExist();
+  expect(wrapper.find('div.container-fluid > NavBar').prop('loading')).toEqual(false);
   expect(wrapper.find('div.container-fluid > div.moo')).toExist();
 });

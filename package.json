@@ -34,6 +34,7 @@
     "html-webpack-plugin": "2.29.0",
     "jest": "20.0.4",
     "jest-enzyme": "^6.0.0",
+    "jest-mock-axios": "^1.0.21",
     "jquery": "^3.3.1",
     "node-sass": "4.7.2",
     "object-assign": "4.1.1",
@@ -63,6 +64,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
+    "eslint": "eslint config mocks scripts src",
     "test": "node scripts/test.js --env=jsdom"
   },
   "jest": {

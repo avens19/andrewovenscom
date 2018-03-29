@@ -2,6 +2,11 @@ machine:
   node:
     version: 6.1.0
 
+test:
+  override:
+    - npm run eslint
+    - npm test
+
 deployment:
   branch:
     branch: /^master$/

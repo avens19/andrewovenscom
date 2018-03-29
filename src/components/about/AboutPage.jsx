@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import * as aboutActions from '../../actions/aboutActions';
 import AboutList from './AboutList';
 
-class AboutPage extends Component {
+export class AboutPage extends Component {
   componentWillMount() {
     this.props.actions.loadAboutsAsync();
   }
