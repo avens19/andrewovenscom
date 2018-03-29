@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import * as skillActions from '../../actions/skillActions';
 import SkillsList from './SkillsList';
 
-class SkillsPage extends Component {
+export class SkillsPage extends Component {
   componentWillMount() {
     this.props.actions.loadSkillsAsync();
   }
