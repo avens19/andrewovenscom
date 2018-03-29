@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import * as contactActions from '../../actions/contactActions';
 import ContactList from './ContactList';
 
-class ContactPage extends Component {
+export class ContactPage extends Component {
   componentWillMount() {
     this.props.actions.loadContactsAsync();
   }

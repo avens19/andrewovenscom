@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router';
 import NavBar from './common/NavBar';
@@ -17,7 +16,6 @@ export class App extends Component {
 }
 
 App.propTypes = {
-  children: PropTypes.array.isRequired,
   loading: PropTypes.bool.isRequired
 };
 
@@ -27,4 +25,5 @@ function mapStateToProps(state, ownProps) {
   };
 }
 
-export default compose(withRouter, connect(mapStateToProps))(App);
+export const ConnectedApp = connect(mapStateToProps)(App);
+export default withRouter(ConnectedApp);
