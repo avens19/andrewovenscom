@@ -4,7 +4,7 @@ import { loadContactsSuccess } from '../actions/contactActions';
 import api from '../api';
 import { CONTACTS } from '../api/dataTypes';
 
-function* getAllContacts() {
+export function* getAllContacts() {
   const state = yield select();
   let contacts = [];
   if (state.contacts.length) {

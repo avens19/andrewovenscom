@@ -4,7 +4,7 @@ import { loadAboutsSuccess } from '../actions/aboutActions';
 import api from '../api';
 import { ABOUTS } from '../api/dataTypes';
 
-function* getAllAbouts() {
+export function* getAllAbouts() {
   const state = yield select();
   let abouts = [];
   if (state.abouts.length) {

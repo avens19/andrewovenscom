@@ -4,7 +4,7 @@ import { loadSkillsSuccess } from '../actions/skillActions';
 import api from '../api';
 import { SKILLS } from '../api/dataTypes';
 
-function* getAllSkills() {
+export function* getAllSkills() {
   const state = yield select();
   let skills = [];
   if (state.skills.length) {
