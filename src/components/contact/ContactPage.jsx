@@ -12,7 +12,9 @@ export class ContactPage extends Component {
 
   render() {
     return (
-      <ContactList contacts={this.props.contacts} />
+      <div id="contact">
+        <ContactList contacts={this.props.contacts} />
+      </div>
     );
   }
 }

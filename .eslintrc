@@ -3,6 +3,7 @@
     "react-app",
     "strict"
   ],
+  "parser": "babel-eslint",
   "rules": {
     "array-element-newline": 0,
     "comma-dangle": [2, "never"],

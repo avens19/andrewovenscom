@@ -7,9 +7,9 @@ import ContactPage from './components/contact/ContactPage';
 
 export default (
   <div>
-    <Route exact path="/" component={HomePage} />
-    <Route path="/skills" component={SkillsPage} />
-    <Route path="/about" component={AboutPage} />
-    <Route path="/contact" component={ContactPage} />
+    <Route path="/" component={HomePage} />
+    <Route path="/" component={SkillsPage} />
+    <Route path="/" component={AboutPage} />
+    <Route path="/" component={ContactPage} />
   </div>
 );

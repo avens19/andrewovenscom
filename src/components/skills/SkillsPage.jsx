@@ -12,7 +12,9 @@ export class SkillsPage extends Component {
 
   render() {
     return (
-      <SkillsList skills={this.props.skills} />
+      <div id="skills">
+        <SkillsList skills={this.props.skills} />
+      </div>
     );
   }
 }

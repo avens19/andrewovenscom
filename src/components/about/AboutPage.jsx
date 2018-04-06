@@ -12,7 +12,9 @@ export class AboutPage extends Component {
 
   render() {
     return (
-      <AboutList abouts={this.props.abouts} />
+      <div id="about">
+        <AboutList abouts={this.props.abouts} />
+      </div>
     );
   }
 }

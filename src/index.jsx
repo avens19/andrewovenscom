@@ -2,6 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import App from './components/App';
+import ScrollContext from './components/ScrollContext';
 import routes from './routes';
 import { createStore, applyMiddleware, compose } from 'redux';
 import rootReducer from './reducers';
@@ -34,9 +35,11 @@ sagaMiddleware.run(contactSaga);
 render(
   <Provider store={store}>
     <BrowserRouter>
-      <App>
-        {routes}
-      </App>
+      <ScrollContext>
+        <App>
+          {routes}
+        </App>
+      </ScrollContext>
     </BrowserRouter>
   </Provider>,
   document.getElementById('root')

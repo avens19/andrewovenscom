@@ -3,7 +3,7 @@ import Masthead from './Masthead';
 
 export default function HomePage() {
   return (
-    <div>
+    <div id="home">
       <Masthead />
     </div>
   );
